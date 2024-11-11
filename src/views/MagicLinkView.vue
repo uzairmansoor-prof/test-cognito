@@ -8,8 +8,8 @@ import Chance from 'chance'
 Amplify.configure({
   Auth: {
     region: 'us-west-1',
-    userPoolId: 'us-west-1_SqttZ4WnL',
-    userPoolWebClientId: '1j0r9v6ff22q9gigt707i4idf3',
+    userPoolId: 'us-west-1_eEIWFroNS',
+    userPoolWebClientId: 'hdv3vvpvrlmjgt0a34bemsepa',
     mandatorySignIn: true
   }
 })
@@ -37,7 +37,7 @@ async function signUp() {
 }
 
 async function sendMagicLink() {
-  const response = await fetch('https://srh943ys6g.execute-api.us-west-1.amazonaws.com/dev', {
+  const response = await fetch('https://r5udlfoyxe.execute-api.us-west-1.amazonaws.com/dev/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
